@@ -1,21 +1,29 @@
 'use strict';
 
-//домашка 1
-let money;
-let time;
-
-var appData = {
-    moneyData: "money",
-    timeData: "time",
-    expenses : {
-        "questionOne" : "answerOne "
-    },
-    optionalExpenses : {},
-    income : [],
-    savings: false
+let num = 50;
+if (num < 49) {
+    console.log("неверно")
+} else if (num > 100) {
+    console.log("Много!")
+} else {
+    console.log("Верно!")
 }
+(num == 50) ? console.log("Верно!") : console.log("Неверно!");
 
-let questionOne = prompt("Введите обязательную статью расходов в этом месяце");
-let answerOne = prompt("Во сколько обойдется?");
-
-alert("Бюджет на 1 день " + answerOne/30 +"единица");
+switch (num) {
+    case num < 49:
+        console.log("Неверно!");
+        break;
+    case num > 100:
+        console.log("Много");
+        break;
+    case num > 80:
+        console.log("Все еще много");
+        break;
+    case num > 80:
+        console.log("Верно");
+        break;    
+    default:
+        console.log("что то не то");
+        break;
+}
