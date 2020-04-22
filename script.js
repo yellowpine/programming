@@ -27,3 +27,17 @@ switch (num) {
         console.log("что то не то");
         break;
 }
+let num1 = 50;
+
+do {
+    console.log(num1);
+    num1++;
+}
+while (num1 < 55);
+
+for (let i = 1; i < 8; i++) {
+    if (i == 6) {
+    
+    }
+    console.log(i); 
+}
